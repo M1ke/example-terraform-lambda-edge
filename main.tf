@@ -73,7 +73,13 @@ resource "aws_lambda_function" "my-lambda" {
   source_code_hash = data.archive_file.my-function.output_base64sha256
   runtime = "nodejs12.x"
   handler = "index.handler"
+
+  # This is also needed for Lambda@Edge
   publish = true
 
  // No environment variables now :-(
+}
+
+output "lambda_arn_for_cloudfront" {
+	value = aws_lambda_function.my-lambda.qualified_arn
 }
