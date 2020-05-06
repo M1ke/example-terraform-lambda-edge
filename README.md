@@ -1,6 +1,6 @@
 # Template Variables for Lambda@Edge demo
 
-This example is designed to go hand-in-hand with my [blog article on environment variables in Lambda@Edge](https://m1ke.me/)
+This example is designed to go hand-in-hand with my [blog article on environment variables in Lambda@Edge](https://m1ke.me/2020/05/handling-environment-variables-in-lambda-edge/)
 
 Deploy this to an AWS environment:
 
